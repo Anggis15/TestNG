@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  	<groups>
+  		<run>
+  		<include name="harian"/>
+  		</run>
+  	</groups>
+    <classes>
+      <class name="com.juaracoding.test.Beranda">
+      <methods>
+      	<exclude name="menu"></exclude>
+      </methods>
+      </class>
+      
+      <class name="com.juaracoding.test.Kategori">
+      <methods>
+      	<exclude name="elektronik"></exclude>
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
